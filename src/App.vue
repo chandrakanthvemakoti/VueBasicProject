@@ -11,7 +11,7 @@
                                 type="text"
                                 id="Name"
                                 class="form-control"
-                                v-model="userData.name">
+                                >
                     </div>
 
                     <div class="form-group">
@@ -20,7 +20,7 @@
                                 type="text"
                                 id="email"
                                 class="form-control"
-                                v-model="userData.email">
+                               >
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
@@ -28,7 +28,7 @@
                                 type="password"
                                 id="password"
                                 class="form-control"
-                                v-model="userData.password">
+                               >
                     </div>
                     <div class="form-group">
                         <label for="age">Age</label>
@@ -36,7 +36,7 @@
                                 type="number"
                                 id="age"
                                 class="form-control"
-                                v-model="userData.age">
+                                >
                     </div>
 
                 </div>
@@ -49,7 +49,7 @@
                             id="message"
                             rows="5"
                             class="form-control"
-                            v-model="address"></textarea>
+                            ></textarea>
                 </div>
             </div>
             
@@ -60,14 +60,14 @@
                                 type="radio"
                                 id="male"
                                 value="Male"
-                                v-model="gender"> Male
+                                > Male
                     </label>
                     <label for="female">
                         <input
                                 type="radio"
                                 id="female"
                                 value="Female"
-                                v-model="gender"> Female
+                              > Female
                     </label>
                 </div>
             </div>
@@ -91,21 +91,7 @@
 <script>
 
     export default {
-        data(){
-            return{
-               userData:{
-                   name:'',
-                   email:'',
-                   password:'',
-                   age:'25'
-               },
-               address:'Text here',
-               
-               gender:'Male',
-            
-            }
-        }
-       
+    
         
        
     }
