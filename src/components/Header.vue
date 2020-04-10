@@ -1,5 +1,6 @@
 <template>
-<div >
+<div class="text-center">
+  <h1>Welcome to VUE JS</h1>
    
     <ul class="nav nav-pills" >
   <router-link to="/register" tag="li" active-class="active" exact><a>Register</a></router-link>
