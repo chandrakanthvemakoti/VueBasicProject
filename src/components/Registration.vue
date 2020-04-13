@@ -163,7 +163,7 @@
         methods:{
        submitted(){
       
-          this.$router.push('/login')
+          this.$router.push({name:'login'});
 }
 
         }
