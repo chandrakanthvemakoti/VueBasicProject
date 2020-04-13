@@ -12,6 +12,9 @@
         <li>
           <router-link to="/login">Sign In</router-link>
         </li>
+        <li>
+          <router-link to="/dashboard">Dashboard</router-link>
+        </li>
         
       </ul>
     </nav>
