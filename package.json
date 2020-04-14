@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "vue": "^2.0.1",
     "vue-router": "^3.1.6",
-    "vuelidate": "^0.7.5"
+    "vue-tables-2": "^2.0.14",
+    "vuelidate": "^0.7.5",
+    "vuetify": "^2.2.21"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

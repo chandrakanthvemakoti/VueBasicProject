@@ -3,6 +3,7 @@
 <template>
     <div class="dash">
    <h1>MY DASHBOARD</h1>
+   <hr>
     <app-table></app-table>
    </div>
 
