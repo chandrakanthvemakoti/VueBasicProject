@@ -2,24 +2,15 @@
    <div class="container">
 <table class="table table-hover">
   <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Website</th>
-      <th scope="col">City</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr v-for="user,index in users">
-      <th scope="row">{{index + 1}}</th>
-      <td>{{user.name}}</td>
-      <td>{{user.email}}</td>
-      <td>{{user.website}}</td>
-      <td>{{user.address.city}}</td>
-    </tr>
-   
-  </tbody>
+          <tr>
+              <th v-for="(column, index) in columns" :key="index"> {{column}}</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr v-for="(item, index) in items" :key="index">
+              <td v-for="(column, indexColumn) in columns" :key="indexColumn">{{item[column]}}</td>
+          </tr>
+      </tbody>
 </table>
 
 
@@ -32,7 +23,26 @@
 
 export default {
 
-props:['users']
+data(){
+  return{
+    items: [
+        {
+            'id':'1',
+            'title': 'hello',
+            'description': 'ok ok',
+            'created_date': '2018-09-09'
+        },
+        {
+            'id':'2',
+            'title': 'hello 2',
+            'description': 'ok ok 2',
+            'created_date': '2018-10-09'
+        }
+    ],
+    columns: [ 'id', 'title', 'description', 'created_date']
+
+  }
+}
  
 }
 </script>
