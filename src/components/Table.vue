@@ -1,6 +1,6 @@
 <template>
-   <div class="container">
-     <div class="col-sm-6">
+   <div>
+  
 <table class="table table-hover table-bordered">
   <thead>
           <tr>
@@ -15,13 +15,13 @@
 </table>
 
 
-   </div>
+   
 
 
 
 
 
-   <div class="col-sm-6">
+   <!-- <div class="col-sm-6">
 <table class="table table-hover table-bordered">
   <thead>
           <tr>
@@ -36,7 +36,7 @@
 </table>
 
 
-   </div>
+   </div> -->
 
    </div>
 </template>
@@ -45,7 +45,7 @@
 
 export default {
 
-props:['items','columns','headers','contents']
+props:['items','columns']
     
 
 

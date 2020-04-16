@@ -2,7 +2,15 @@
     <div class="dash">
    <h1>MY DASHBOARD</h1>
    <hr>
-    <app-table :items="items" :columns="columns" :headers="headers" :contents="contents" ></app-table>
+   <div class="col-sm-6">
+    <app-table :items="items" :columns="columns"  ></app-table>
+    </div>
+    <div class="col-sm-6">
+    <app-table :items="contents" :columns="headers" ></app-table>
+    </div>
+    <div class="col-sm-6">
+    <app-table :items="contents" :columns="headers" ></app-table>
+    </div>
    </div>
    </template>
     <script>
