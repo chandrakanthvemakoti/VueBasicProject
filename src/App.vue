@@ -1,4 +1,26 @@
 <template>
+
+    
+    <div>
+   <app-header></app-header>
+  
+   <router-view></router-view> 
+ 
+            </div>
+       
+
+</template>
+
+<script>
+import Header from './components/Header.vue'
+
+    export default {
+    
+
+        components:{
+            appHeader: Header,
+         
+    
     <div class="container">
         <form>
             <div class="row">
@@ -112,9 +134,14 @@
 
         },
        
+
     }
 </script>
 
 <style>
+body, html {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 
 </style>
