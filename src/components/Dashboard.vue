@@ -8,9 +8,7 @@
     <div class="col-sm-6">
     <app-table :items="contents" :columns="headers" ></app-table>
     </div>
-    <div class="col-sm-6">
-    <app-table :items="contents" :columns="headers" ></app-table>
-    </div>
+    
    </div>
    </template>
     <script>
